@@ -69,4 +69,15 @@ def manu():
         print(" 2.Maths question")
         print(" 3.Exit")
         choice = input('Choice one: ')
-        
+
+        if choice == "1":
+            if __name__ == "__main__":
+               run_questions(questions)
+        elif choice == "2":
+            math()
+        elif choice == "3":
+            print("Goodby")
+            break
+        else:
+            print("Invalid choice, try again")
+manu()
