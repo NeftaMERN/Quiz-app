@@ -61,4 +61,12 @@ def math():
         else:
             print(f'not correct {answer}')
     print(f'get score {score}/5')
+
+def manu():
+
+    while True:
+        print("\n 1.General Programming question")
+        print(" 2.Maths question")
+        print(" 3.Exit")
+        choice = input('Choice one: ')
         
