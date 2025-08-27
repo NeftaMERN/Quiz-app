@@ -1,4 +1,6 @@
 
+import random
+
 questions = {
     "What is the capital of France?": "Paris",
     "Who developed Python Programming Language?": "Guido van Rossum",
@@ -25,5 +27,24 @@ def run_questions(quiz_question):
 
     print(f'score {score}/ {len(quiz_question)}')
 
-if __name__ == "__main__":
-    run_questions(questions)
+# if __name__ == "__main__":
+#     run_questions(questions)
+
+def randem_question():
+
+    num1 = random.randint(1,20)
+    num2 = random.randint(1,20)
+
+    opreters = random.choice(['+', '-', '*', '/'])
+
+    if opreters == '/':
+        num2 = random.randint(1,20)
+        answer = round(num1 / num2, 2)
+    elif opreters == '+':
+        answer = num1 + num2
+    elif opreters == '-':
+        answer = num1 - num2
+    elif opreters == '*':
+        answer = num1 * num2
+
+    return f'{num1} {opreters} {num2}', answer
