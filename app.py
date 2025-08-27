@@ -48,3 +48,17 @@ def randem_question():
         answer = num1 * num2
 
     return f'{num1} {opreters} {num2}', answer
+
+def math():
+    score = 0
+    for i in range(5):
+        question, answer = randem_question()
+        print(question)
+        user_answer = float(input('Enter answer: '))
+        if user_answer == answer:
+            print('correct\n')
+            score += 1
+        else:
+            print(f'not correct {answer}')
+    print(f'get score {score}/5')
+        
